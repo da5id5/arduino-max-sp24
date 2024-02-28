@@ -4,7 +4,7 @@
 
  download repo by clicking on code and download zip
  
- each "hello" project directory contains both an arduino sketch (.ino) a corresoponding max patch (.maxpat) and if you are using ableton live suite a max for live Patch (.amxd)
+ each "hello" project directory contains both an arduino sketch (.ino), a corresoponding cycling 74 max patch (.maxpat), and if you are using ableton live suite a max for live patch (.amxd)
  
 projects in order
 1. hello_blink
@@ -15,5 +15,7 @@ projects in order
 6. hello_instrument_max
  
  each arduino sketch (.ino) has a corresponding tinkercad url in comments to help build physical arduino circuit, command/ctrl click link to launch browser and then click tinker this!
+
+
 
 
