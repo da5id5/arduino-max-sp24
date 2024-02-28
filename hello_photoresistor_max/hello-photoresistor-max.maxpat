@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 570.0, 62.0, 889.0, 883.0 ],
+		"rect" : [ 457.0, 99.0, 694.0, 768.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,63 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 573.0, 460.0, 80.0, 20.0 ],
+					"text" : "photoresistor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 399.0, 503.0, 54.0, 33.0 ],
+					"text" : "pot 1 *2 (0-520)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 263.0, 494.0, 77.0, 20.0 ],
+					"text" : "pot 1 (0-255)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 469.0, 639.5, 150.0, 33.0 ],
+					"text" : "scope~ (set to automatic mode in inspector)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"automatic" : 1,
+					"id" : "obj-2",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 323.0, 591.0, 130.0, 130.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-17",
 					"maxclass" : "flonum",
@@ -47,7 +104,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 495.0, 591.0, 50.0, 22.0 ]
+					"patching_rect" : [ 519.0, 557.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -58,7 +115,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 501.0, 542.0, 103.0, 22.0 ],
+					"patching_rect" : [ 519.0, 508.0, 103.0, 22.0 ],
 					"text" : "scale 0 1000 0. 1."
 				}
 
@@ -166,7 +223,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 129.0, 625.5, 141.0, 43.5 ]
+					"patching_rect" : [ 137.5, 624.75, 141.0, 43.5 ]
 				}
 
 			}
@@ -207,17 +264,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 268.0, 374.0, 250.0, 20.0 ],
-					"text" : "arduino serial can support up to 6 sensors"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -233,36 +279,34 @@
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 6,
-					"outlettype" : [ "int", "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 129.0, 404.0, 683.0, 22.0 ],
-					"text" : "unpack i i i i i i"
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "int", "int", "int" ],
+					"patching_rect" : [ 129.0, 404.0, 409.0, 22.0 ],
+					"text" : "unpack i i i i"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 392.0, 50.0, 35.0 ],
-					"text" : "1 122 244 0"
+					"patching_rect" : [ 3.0, 365.0, 102.0, 22.0 ],
+					"text" : "1 133 266 138"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 334.0, 50.0, 35.0 ],
-					"text" : "\"1 122 244 0\""
+					"patching_rect" : [ 3.0, 319.0, 102.0, 22.0 ],
+					"text" : "\"1 133 266 138\""
 				}
 
 			}
@@ -378,7 +422,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 20.0, 177.0, 50.0, 22.0 ],
-					"text" : "32"
+					"text" : "49"
 				}
 
 			}
@@ -708,6 +752,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 

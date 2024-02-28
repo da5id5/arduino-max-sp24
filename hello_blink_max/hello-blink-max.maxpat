@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 543.0, 159.0, 823.0, 413.0 ],
+		"rect" : [ 171.0, 265.0, 1205.0, 620.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 6.666666865348816, 322.000009596347809, 196.800002932548523, 74.0 ],
+					"text" : "MAX PATCH\nlock or edit mode \nswitch w/ lock icon lower left panel \nor command/ctrl + E\nor  command/ctrl + mouse click"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 610.400009095668793, 205.5, 150.0, 33.0 ],
+					"text" : "toggle on/off based on metronome"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 362.400005400180817, 168.000002503395081, 92.800001382827759, 33.0 ],
+					"text" : "message result\nfor toggle"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 459.20000684261322, 168.000002503395081, 50.0, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-28",
 					"linecount" : 2,
@@ -127,11 +175,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-36",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 415.0, 307.0, 104.0, 20.0 ],
-					"text" : "convert to ascii"
+					"patching_rect" : [ 415.0, 307.0, 104.0, 47.0 ],
+					"text" : "convert to ascii\nL== 76\nH== 72"
 				}
 
 			}
@@ -270,11 +319,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 173.0, 150.0, 150.0, 20.0 ],
-					"text" : "use same port as arduino"
+					"patching_rect" : [ 173.0, 150.0, 150.0, 47.0 ],
+					"text" : "use same port as arduino\nedit message box if different than d"
 				}
 
 			}
@@ -292,11 +342,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 222.0, 77.0, 201.0, 20.0 ],
-					"text" : "view available ports in max console"
+					"patching_rect" : [ 217.600003242492676, 70.5, 201.0, 33.0 ],
+					"text" : "view available ports in max console\nlocated on right max panel"
 				}
 
 			}
@@ -373,11 +424,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 207.0, 254.0, 150.0, 20.0 ],
-					"text" : "9600 baud"
+					"patching_rect" : [ 203.799997627735138, 257.600003838539124, 159.200002372264862, 47.0 ],
+					"presentation_linecount" : 4,
+					"text" : "9600 baud\nunit of transmission speed \n1 baud == 1 bit per second"
 				}
 
 			}
@@ -506,6 +559,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
+					"order" : 0,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"order" : 1,
 					"source" : [ "obj-52", 0 ]
 				}
 

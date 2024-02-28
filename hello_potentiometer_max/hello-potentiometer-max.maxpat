@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 570.0, 62.0, 889.0, 883.0 ],
+		"rect" : [ 394.0, 105.0, 620.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,37 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 379.0, 439.0, 150.0, 60.0 ],
+					"text" : "also pot 1 but multiplied by 2 in arduino code 0 510\nyou can also do this w/ max"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 209.0, 450.0, 139.0, 33.0 ],
+					"presentation_linecount" : 7,
+					"text" : "pot 1 mapped in arduino sketch to 0 to 255"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 266.5, 535.0, 59.0, 22.0 ],
+					"patching_rect" : [ 265.0, 589.0, 59.0, 22.0 ],
 					"text" : "rect~ 440"
 				}
 
@@ -58,7 +83,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 394.600000000000023, 459.0, 50.0, 22.0 ]
+					"patching_rect" : [ 393.0, 513.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -70,7 +95,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 262.0, 459.0, 50.0, 22.0 ]
+					"patching_rect" : [ 260.0, 513.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 53.0, 543.0, 66.0, 22.0 ],
+					"patching_rect" : [ 51.0, 597.0, 66.0, 22.0 ],
 					"text" : "cycle~ 220"
 				}
 
@@ -94,7 +119,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 148.0, 533.0, 24.0, 24.0 ]
+					"patching_rect" : [ 146.0, 587.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -105,7 +130,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 137.5, 586.0, 29.5, 22.0 ],
+					"patching_rect" : [ 136.0, 640.0, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -116,7 +141,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 624.0, 45.0, 45.0 ]
+					"patching_rect" : [ 57.0, 678.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -129,7 +154,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 129.0, 625.5, 141.0, 43.5 ]
+					"patching_rect" : [ 127.0, 680.0, 141.0, 43.5 ]
 				}
 
 			}
@@ -140,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 184.0, 535.0, 50.0, 22.0 ],
+					"patching_rect" : [ 182.0, 589.0, 50.0, 22.0 ],
 					"text" : "0"
 				}
 
@@ -152,7 +177,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 148.0, 494.0, 77.0, 22.0 ],
+					"patching_rect" : [ 146.0, 548.0, 77.0, 22.0 ],
 					"text" : "scale 0 1 1 0"
 				}
 
@@ -163,19 +188,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 460.0, 56.0, 20.0 ],
+					"patching_rect" : [ 82.0, 514.0, 56.0, 20.0 ],
 					"text" : "button 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 268.0, 374.0, 250.0, 20.0 ],
-					"text" : "arduino serial can support up to 6 sensors"
 				}
 
 			}
@@ -187,7 +201,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 148.0, 459.0, 50.0, 22.0 ]
+					"patching_rect" : [ 146.0, 513.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -196,10 +210,10 @@
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 6,
-					"outlettype" : [ "int", "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 129.0, 404.0, 683.0, 22.0 ],
-					"text" : "unpack i i i i i i"
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 129.0, 404.0, 284.600000000000023, 22.0 ],
+					"text" : "unpack i i i"
 				}
 
 			}
@@ -210,21 +224,20 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 392.0, 50.0, 22.0 ],
-					"text" : "1 37 74"
+					"patching_rect" : [ 28.0, 392.0, 67.0, 22.0 ],
+					"text" : "1 16 32"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 334.0, 50.0, 35.0 ],
-					"text" : "\"1 37 74\""
+					"patching_rect" : [ 28.0, 334.0, 74.0, 22.0 ],
+					"text" : "\"1 16 32\""
 				}
 
 			}
